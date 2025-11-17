@@ -36,7 +36,7 @@ jobs:
           git init
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git remote add origin https://github-action:$GITHUB_TOKEN@github.com/ircfspace/XraySubRefiner.git
+          git remote add origin https://github-action:$GITHUB_TOKEN@github.com/ircfspace/XrayRefiner.git
           git branch -M export
           git add .
           git commit -m "Update export"
