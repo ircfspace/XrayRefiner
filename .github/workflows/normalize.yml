@@ -1,0 +1,43 @@
+name: Normalize Subscriptions
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "0 */3 * * *"
+
+jobs:
+  build-and-run:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.22"
+
+      - name: Build
+        run: |
+          go build -o xsr ./cmd/xraysubrefiner
+
+      - name: Run
+        run: |
+          mkdir -p ./export
+          ./xsr -config config.yaml -out export
+
+      - name: Commit & push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd ./export
+          git init
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git remote add origin https://github-action:$GITHUB_TOKEN@github.com/ircfspace/XraySubRefiner.git
+          git branch -M export
+          git add .
+          git commit -m "Update export"
+          git push -f origin export

@@ -1,0 +1,38 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Go build artifacts
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Binaries / local builds
+/bin/
+/build/
+/dist/
+/vendor/
+xsr
+xsr.exe
+
+# Coverage / profiles
+coverage/
+coverage.*
+*.coverprofile
+*.prof
+*.pprof
+profile.*
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Exports:
+# Ignore everything under export/
+export/

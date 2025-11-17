@@ -1,0 +1,57 @@
+allowed_schemes: ["vless", "vmess", "ss", "trojan"]
+
+lite:
+  strategy: per_host
+  max_total: 100
+  per_host_limit: 1
+  n: 50
+
+subscriptions:
+  - key: "mahsaXray"
+    url: "https://raw.githubusercontent.com/MahsaNetConfigTopic/config/refs/heads/main/xray_final.txt"
+  - key: "code3Vless"
+    url: "https://raw.githubusercontent.com/code3-dev/code3-dev/refs/heads/main/warp-in-vless#Warp-in-VLESS"
+  - key: "parvinXs"
+    url: "https://raw.githubusercontent.com/parvinxs/Fssociety/refs/heads/main/Fssociety.sub"
+  - key: "psgV6"
+    url: "https://raw.githubusercontent.com/itsyebekhe/PSG/main/lite/subscriptions/xray/normal/vless_ipv6"
+  - key: "amirAlter"
+    url: "https://sub.amiralter.com/config-lite"
+  - key: "darkProxy"
+    url: "https://raw.githubusercontent.com/darkvpnapp/CloudflarePlus/refs/heads/main/proxy"
+  - key: "psgMix"
+    url: "https://raw.githubusercontent.com/itsyebekhe/PSG/main/lite/subscriptions/xray/normal/mix"
+  - key: "hamedP"
+    url: "https://cdn.jsdelivr.net/gh/hamedp-71/Sub_Checker_Creator@main/final.txt"
+  - key: "soliSpirit"
+    url: "https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/refs/heads/main/all_configs.txt"
+  - key: "matinGh"
+    url: "https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/v2ray/super-sub.txt"
+  - key: "daniSamadi"
+    url: "https://raw.githubusercontent.com/Danialsamadi/v2go/main/All_Configs_Sub.txt"
+  - key: "gameFssociety"
+    url: "https://raw.githubusercontent.com/parvinxs/Game/refs/heads/main/Sub_game_fssociety"
+  - key: "goidaVpn"
+    url: "https://raw.githubusercontent.com/AvenCores/goida-vpn-configs/refs/heads/main/githubmirror/18.txt"
+
+locations:
+  - key: "location/DE"
+    url: "https://raw.githubusercontent.com/itsyebekhe/PSG/main/lite/subscriptions/location/base64/DE"
+  - key: "location/TR"
+    url: "https://raw.githubusercontent.com/itsyebekhe/PSG/main/lite/subscriptions/location/base64/TR"
+  - key: "location/GB"
+    url: "https://raw.githubusercontent.com/itsyebekhe/PSG/main/lite/subscriptions/location/base64/GB"
+  - key: "location/US"
+    url: "https://raw.githubusercontent.com/itsyebekhe/PSG/main/lite/subscriptions/location/base64/US"
+  - key: "location/IR"
+    url: "https://raw.githubusercontent.com/itsyebekhe/PSG/main/lite/subscriptions/location/base64/IR"
+  - key: "location/RU"
+    url: "https://raw.githubusercontent.com/itsyebekhe/PSG/main/lite/subscriptions/location/base64/RU"
+  - key: "location/CN"
+    url: "https://raw.githubusercontent.com/itsyebekhe/PSG/main/lite/subscriptions/location/base64/CN"
+  - key: "location/FI"
+    url: "https://raw.githubusercontent.com/itsyebekhe/PSG/main/lite/subscriptions/location/base64/FI"
+  - key: "location/FR"
+    url: "https://raw.githubusercontent.com/itsyebekhe/PSG/main/lite/subscriptions/location/base64/FR"
+  - key: "location/SE"
+    url: "https://raw.githubusercontent.com/itsyebekhe/PSG/main/lite/subscriptions/location/base64/SE"
