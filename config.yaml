@@ -33,6 +33,12 @@ subscriptions:
     url: "https://raw.githubusercontent.com/parvinxs/Game/refs/heads/main/Sub_game_fssociety"
   - key: "goidaVpn"
     url: "https://raw.githubusercontent.com/AvenCores/goida-vpn-configs/refs/heads/main/githubmirror/18.txt"
+  - key: "kobabi"
+    url: "https://raw.githubusercontent.com/liketolivefree/kobabi/main/sub.txt"
+  - key: "configForge"
+    url: "https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/all.txt"
+  - key: "v2RayRoot"
+    url: "https://raw.githubusercontent.com/V2RayRoot/V2RayConfig/refs/heads/main/Config/vless.txt"
 
 locations:
   - key: "location/DE"
