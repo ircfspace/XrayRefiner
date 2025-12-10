@@ -39,6 +39,8 @@ subscriptions:
     url: "https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/all.txt"
   - key: "v2RayRoot"
     url: "https://raw.githubusercontent.com/V2RayRoot/V2RayConfig/refs/heads/main/Config/vless.txt"
+  - key: "azIrani"
+    url: "https://raw.githubusercontent.com/ToolSeRF/AzIRANi/refs/heads/main/AllConfigs.txt"
 
 locations:
   - key: "location/DE"
