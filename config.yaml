@@ -41,6 +41,8 @@ subscriptions:
     url: "https://raw.githubusercontent.com/V2RayRoot/V2RayConfig/refs/heads/main/Config/vless.txt"
   - key: "azIrani"
     url: "https://raw.githubusercontent.com/ToolSeRF/AzIRANi/refs/heads/main/AllConfigs.txt"
+  - key: "begTemp"
+    url: "https://manager.begweb.com/api/sub/3"
 
 locations:
   - key: "location/DE"
