@@ -43,6 +43,8 @@ subscriptions:
     url: "https://raw.githubusercontent.com/ToolSeRF/AzIRANi/refs/heads/main/AllConfigs.txt"
   - key: "begTemp"
     url: "https://manager.begweb.com/api/sub/3"
+  - key: "sligvpn"
+    url: "https://connect.sligvpn.ru/PqTftp8MJD2h1u7B"
 
 locations:
   - key: "location/DE"
