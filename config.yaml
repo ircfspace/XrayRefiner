@@ -47,6 +47,8 @@ subscriptions:
     url: "https://connect.sligvpn.ru/PqTftp8MJD2h1u7B"
   - key: "Epodonios"
     url: "https://raw.githubusercontent.com/Epodonios/v2ray-configs/refs/heads/main/Splitted-By-Protocol/ss.txt"
+  - key: "deltanw"
+    url: "https://deltanw.top/?secret=2GQ6681rZZ3KrerjAWQPpPmm4d4XYMYXb0zfwSSgwHEctU6RmjRqBVW2i0v9fwwbSYo%3D"
 
 locations:
   - key: "location/DE"
