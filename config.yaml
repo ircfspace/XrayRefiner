@@ -49,6 +49,8 @@ subscriptions:
     url: "https://raw.githubusercontent.com/Epodonios/v2ray-configs/refs/heads/main/Splitted-By-Protocol/ss.txt"
   - key: "deltanw"
     url: "https://deltanw.top/?secret=2GQ6681rZZ3KrerjAWQPpPmm4d4XYMYXb0zfwSSgwHEctU6RmjRqBVW2i0v9fwwbSYo%3D"
+  - key: "hectorSalamanca"
+    url: "https://chicken.hectorsalamanca.site:2096/Defyx/8pg34ec5ec91nmob"
 
 locations:
   - key: "location/DE"
