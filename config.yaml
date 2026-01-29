@@ -51,6 +51,8 @@ subscriptions:
     url: "https://pguard.cappyt.sh/sub/cHVibGljLDE3NjkxMjE5MTQx-zyHLEVfT"
   - key: "mineral"
     url: "https://raw.githubusercontent.com/LalatinaHub/Mineral/refs/heads/master/result/nodes"
+  - key: "awmirx"
+    url: "https://raw.githubusercontent.com/Awmiroosen/awmirx-v2ray/refs/heads/main/blob/main/v2-sub.txt"
 
 locations:
   - key: "location/DE"
