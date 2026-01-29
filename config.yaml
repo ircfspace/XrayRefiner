@@ -49,6 +49,8 @@ subscriptions:
     url: "https://chicken.hectorsalamanca.site:2096/Defyx/8pg34ec5ec91nmob"
   - key: "biscottyT"
     url: "https://pguard.cappyt.sh/sub/cHVibGljLDE3NjkxMjE5MTQx-zyHLEVfT"
+  - key: "mineral"
+    url: "https://raw.githubusercontent.com/LalatinaHub/Mineral/refs/heads/master/result/nodes"
 
 locations:
   - key: "location/DE"
