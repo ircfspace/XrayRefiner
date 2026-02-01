@@ -55,6 +55,8 @@ subscriptions:
     url: "https://raw.githubusercontent.com/Awmiroosen/awmirx-v2ray/refs/heads/main/blob/main/v2-sub.txt"
   - key: "vpnHub"
     url: "https://raw.githubusercontent.com/itsyebekhe/persianvpnhub/refs/heads/export/base64"
+  - key: "donation"
+    url: "https://donate-api.defyxvpn.com/subscription"
 
 locations:
   - key: "location/DE"
