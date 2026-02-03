@@ -57,6 +57,18 @@ subscriptions:
     url: "https://raw.githubusercontent.com/itsyebekhe/persianvpnhub/refs/heads/export/base64"
   - key: "donation"
     url: "https://donate-api.defyxvpn.com/subscription"
+  - key: "barryFar"
+    url: "https://raw.githubusercontent.com/barry-far/V2ray-Config/refs/heads/main/All_Configs_base64_Sub.txt"
+  - key: "aliLapro"
+    url: "https://raw.githubusercontent.com/ALIILAPRO/v2rayNG-Config/refs/heads/main/server.txt"
+  - key: "matinGhanbari"
+    url: "https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/refs/heads/main/subscriptions/v2ray/all_sub.txt"
+  - key: "hamedCode"
+    url: "https://raw.githubusercontent.com/hamedcode/port-based-v2ray-configs/main/sub/port_443.txt"
+  - key: "mahdiBland"
+    url: "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.txt"
+  - key: "shatakVpn"
+    url: "https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/all.txt"
 
 locations:
   - key: "location/DE"
