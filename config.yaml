@@ -56,7 +56,7 @@ subscriptions:
   - key: "vpnHub"
     url: "https://raw.githubusercontent.com/itsyebekhe/persianvpnhub/refs/heads/export/base64"
   - key: "donation"
-    url: "https://donate-api.defyxvpn.com/donate/subscription"
+    url: "https://donate-api.defyxvpn.com/donate/subscription/xray"
   - key: "barryFar"
     url: "https://raw.githubusercontent.com/barry-far/V2ray-Config/refs/heads/main/All_Configs_base64_Sub.txt"
   - key: "aliLapro"
