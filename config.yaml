@@ -71,6 +71,8 @@ subscriptions:
     url: "https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/all.txt"
   - key: "justVisiting"
     url: "https://raw.githubusercontent.com/justVisiting992/xray-Config-Collector/main/ss_iran.txt"
+  - key: "samNet"
+    url: "http://198.23.249.154:8080/sub"
 
 locations:
   - key: "location/DE"
