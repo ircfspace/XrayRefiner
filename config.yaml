@@ -62,7 +62,7 @@ subscriptions:
   - key: "matinGhanbari"
     url: "https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/refs/heads/main/subscriptions/v2ray/all_sub.txt"
   - key: "hamedCode"
-    url: "https://raw.githubusercontent.com/hamedcode/port-based-v2ray-configs/main/sub/port_443.txt"
+    url: "https://raw.githubusercontent.com/hamedcode/port-based-v2ray-configs/refs/heads/main/sub/vless.txt"
   - key: "mahdiBland"
     url: "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.txt"
   - key: "shatakVpn"
