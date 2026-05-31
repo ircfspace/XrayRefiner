@@ -75,6 +75,10 @@ subscriptions:
     url: "https://raw.githubusercontent.com/mahsanet/MahsaFreeConfig/refs/heads/main/mtn/sub_1.txt"
   - key: "igareck"
     url: "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS_mobile.txt"
+  - key: "whoahaow"
+    url: "https://raw.githubusercontent.com/whoahaow/rjsxrd/refs/heads/main/githubmirror/bypass/bypass-all.txt"
+  - key: "shadowException"
+    url: "https://raw.githubusercontent.com/ShadowException/VPN/refs/heads/main/configs/VPN-cat"
 
 locations:
   - key: "location/DE"
