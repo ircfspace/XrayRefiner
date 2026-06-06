@@ -79,6 +79,8 @@ subscriptions:
     url: "https://raw.githubusercontent.com/whoahaow/rjsxrd/refs/heads/main/githubmirror/bypass/bypass-all.txt"
   - key: "shadowException"
     url: "https://raw.githubusercontent.com/ShadowException/VPN/refs/heads/main/configs/VPN-cat"
+  - key: "whiteDns"
+    url: "https://sub.iampedi4.live/sub/base64.txt"
 
 locations:
   - key: "location/DE"
