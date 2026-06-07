@@ -80,7 +80,9 @@ subscriptions:
   - key: "shadowException"
     url: "https://raw.githubusercontent.com/ShadowException/VPN/refs/heads/main/configs/VPN-cat"
   - key: "whiteDns"
-    url: "https://sub.iampedi4.live/sub/base64.txt"
+    url: "https://sub.iampedi5.live/sub/base64.txt"
+  - key: "masirSefid"
+    url: "https://raw.githubusercontent.com/masir-sefid/Sub/main/@Masir_Sefid.txt"
 
 locations:
   - key: "location/DE"
