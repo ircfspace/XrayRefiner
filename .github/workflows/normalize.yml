@@ -24,19 +24,22 @@ jobs:
           go build -o xsr ./cmd/xraysubrefiner
 
       - name: Run
+        env:
+          XRAY_SUBREFINER_CONFIG: ${{ vars.XRAY_SUBREFINER_CONFIG }}
         run: |
           mkdir -p ./export
-          ./xsr -config config.yaml -out export
+          ./xsr -out export
 
       - name: Commit & push changes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
           cd ./export
           git init
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git remote add origin https://github-action:$GITHUB_TOKEN@github.com/ircfspace/XrayRefiner.git
+          git remote add origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
           git branch -M export
           git add .
           git commit -m "Update export"

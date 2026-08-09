@@ -20,6 +20,8 @@ import (
 	"gopkg.in/yaml.v3"
 )
 
+const configEnvVar = "XRAY_SUBREFINER_CONFIG"
+
 type Subscription struct {
 	Key string `yaml:"key"`
 	URL string `yaml:"url"`
@@ -51,12 +53,20 @@ func must(err error) {
 }
 
 func main() {
-	cfgPath := flag.String("config", "config.yaml", "path to config.yaml")
+	cfgPath := flag.String("config", "", "path to config.yaml")
 	outDir := flag.String("out", "export", "output directory")
 	timeout := flag.Duration("timeout", 20*time.Second, "HTTP client timeout")
 	flag.Parse()
 
-	cfg, err := loadConfig(*cfgPath)
+	var explicitConfig bool
+	flag.Visit(func(f *flag.Flag) {
+		if f.Name == "config" {
+			explicitConfig = true
+		}
+	})
+
+	configSource := resolveConfigSource(explicitConfig, *cfgPath, os.Getenv(configEnvVar))
+	cfg, err := loadConfig(configSource)
 	must(err)
 
 	client := &http.Client{Timeout: *timeout}
@@ -130,11 +140,44 @@ func main() {
 	}
 }
 
-func loadConfig(path string) (*Config, error) {
-	b, err := os.ReadFile(path)
-	if err != nil {
+func resolveConfigSource(explicitConfig bool, flagValue, envValue string) string {
+	flagValue = strings.TrimSpace(flagValue)
+	if explicitConfig && flagValue != "" {
+		return flagValue
+	}
+	if envValue != "" {
+		return envValue
+	}
+	return flagValue
+}
+
+func loadConfig(source string) (*Config, error) {
+	source = strings.TrimSpace(source)
+	if source == "" {
+		return nil, fmt.Errorf("config source is empty")
+	}
+
+	if looksLikeInlineYAML(source) {
+		return parseConfig([]byte(source))
+	}
+
+	if info, err := os.Stat(source); err == nil {
+		if info.IsDir() {
+			return nil, fmt.Errorf("config path %q is a directory", source)
+		}
+		b, err := os.ReadFile(source)
+		if err != nil {
+			return nil, err
+		}
+		return parseConfig(b)
+	} else if err != nil && !os.IsNotExist(err) {
 		return nil, err
 	}
+
+	return nil, fmt.Errorf("config source %q not found", source)
+}
+
+func parseConfig(b []byte) (*Config, error) {
 	var cfg Config
 	if err := yaml.Unmarshal(b, &cfg); err != nil {
 		return nil, err
@@ -146,6 +189,16 @@ func loadConfig(path string) (*Config, error) {
 		cfg.Lite.N = 100
 	}
 	return &cfg, nil
+}
+
+func looksLikeInlineYAML(source string) bool {
+	if strings.Contains(source, "\n") || strings.Contains(source, "\r") {
+		return true
+	}
+	if strings.Contains(source, ":") || strings.Contains(source, "{") || strings.Contains(source, "[") {
+		return true
+	}
+	return false
 }
 
 func fetch(client *http.Client, rawurl string) ([]byte, error) {
