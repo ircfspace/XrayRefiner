@@ -91,6 +91,8 @@ subscriptions:
     url: "https://kaveh.yebekhe.workers.dev/sub/donations"
   - key: "ariataPanel"
     url: "https://raw.githubusercontent.com/aristapanell-cell/AriataPanel/refs/heads/main/configs.txt/combined/ALL/ALL.txt"
+  - key: "radikal"
+    url: "https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/refs/heads/main/all/configs.txt"
 
 locations:
   - key: "location/DE"
