@@ -1,4 +1,4 @@
-allowed_schemes: ["vless", "vmess", "ss", "trojan"]
+allowed_schemes: ["vless", "vmess", "ss", "trojan", "hysteria2"]
 
 lite:
   strategy: per_host
